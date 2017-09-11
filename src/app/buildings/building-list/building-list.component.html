@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-success">
+            New Building
+        </button>
+    </div>  
+</div>
+<hr>
+<div class="row">
+    <div class="col-xs-12">
+        <!-- to be repeated -->
+        <a href="#" class="list-group-item clearfix" *ngFor="let thebuilding of buildings">
+            <div class="pull-left">
+                <h4 class="list-group-item-heading"> {{ thebuilding.name }} </h4>
+                <p class="list-group-item-text"> {{ thebuilding.description }} </p>
+            </div>
+            <span class="pull-right">
+                <img [src]="thebuilding.imagePath" alt="{{ thebuilding.name }}" class="img-responsive">
+            </span>
+        </a>
+        <!-- end to be repeated -->  
+    </div>
+</div>

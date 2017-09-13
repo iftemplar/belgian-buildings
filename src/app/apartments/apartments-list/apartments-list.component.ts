@@ -11,7 +11,8 @@ export class ApartmentsListComponent implements OnInit {
 
 	apartments: Apartment[] = [
 		new Apartment('Two level flat', 1),
-		new Apartment('4 room flat', 2)
+		new Apartment('4 room flat', 2),
+		new Apartment('Studio flat', 4)
 	];
 
   constructor() { }
